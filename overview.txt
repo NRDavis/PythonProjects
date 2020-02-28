@@ -1,0 +1,4 @@
+In this repository, you'll find a number of individual projects made to prototype user experiences for later developments.
+
+Most of these applets have been implemented using a cross platform GUI library called kivy. They're implemented first in Python
+for its rate of development, then redesigned in another software format native to the intended user's device.
