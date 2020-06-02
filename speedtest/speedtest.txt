@@ -1,0 +1,16 @@
+Nathan Davis
+speedtest.txt
+
+This script is designed to run a speed test by ookla. It will print the data to the cli.
+Modifying the script to append a txt file would take only a few lines - I'll leave that up to you to implement.
+
+
+Here are a list of resources I used in completing this script:
+	https://towardsdatascience.com/controlling-the-web-with-python-6fceb22c5f08
+	https://selenium-python.readthedocs.io/locating-elements.html#locating-elements-by-class-name
+	does https://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.chrome.webdriver
+	https://www.selenium.dev/selenium/docs/api/py/webdriver/selenium.webdriver.common.desired_capabilities.html#module-
+	
+
+
+
