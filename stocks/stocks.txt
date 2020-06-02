@@ -1,0 +1,47 @@
+stocks.txt - associated with stocks.py
+
+cd ~/Documents/pythonResources/scripts
+python3 stocks.py
+
+
+<input class="gLFyf gsfi" maxlength="2048" name="q" type="text" jsaction="paste:puy29d" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" value="" aria-label="Search" data-ved="0ahUKEwiRlYaM3dTpAhUEm-AKHY5xCdUQ39UDCAY">
+
+
+
+
+
+# <span class="IsqQVc NprOob XcVN5d" jsname="vWLAgc">25,256.41</span>
+# https://developers.google.com/web/updates/2017/04/headless-chrome
+
+
+
+
+
+
+
+
+
+
+
+
+https://quotes.freerealtime.com/
+
+<input placeholder="Ticker" type="text" id="edit-symbol" name="symbol" value="" size="4" maxlength="150" class="form-text">
+
+<input class="btn btn-primary form-submit" type="submit" id="edit-submit" name="op" value="Go!">
+
+
+
+https://quotes.freerealtime.com/symbol-search
+
+
+
+
+https://quotes.freerealtime.com/quotes/coke/Quote
+
+# Here we have overall price
+<span class="qmod-last">250.54<!--|asCurrency data.key.currency tLang--></span>
+
+
+# Here we have change in price
+<span class="qmod-change qmod-ch-up" rv-qmodchange="data.pricedata.change"><span class="qmod-change-icon fa fa-arrow-circle-up" rv-qmodchangeicon="data.pricedata.change"></span><span>9.08</span><span class="qmod-pipe-sep">&nbsp;|&nbsp;</span><span>3.76%</span></span>
