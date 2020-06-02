@@ -1,0 +1,12 @@
+WhatsWhat.txt
+
+This document is intended to guide viewers of this repository through each of the files included.
+
+There are a number of image files used throughout this directory that have been sourced from unsplash.com under their free-for-use proviso. Other images I have captured myself.
+
+
+
+Here is a list of the python scripts inlcuded and their applications:
+				viewImage.py			Demonstrates how to open an image using OpenCV
+				prompt.py 				Demos how OpenCV objects can be utilized within fairly standard code, especially when embedded in another application.
+	
