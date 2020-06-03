@@ -9,4 +9,5 @@ There are a number of image files used throughout this directory that have been 
 Here is a list of the python scripts inlcuded and their applications:
 				viewImage.py			Demonstrates how to open an image using OpenCV
 				prompt.py 				Demos how OpenCV objects can be utilized within fairly standard code, especially when embedded in another application.
-	
+				drawing.py				illustrates how we can use simple commands to alter the appearance of our image
+				maze.py			Used to practice drawing objects within a cv2 context
