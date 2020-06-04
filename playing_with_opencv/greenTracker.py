@@ -6,10 +6,10 @@ cap = cv2.VideoCapture(0)			# we use the default web camera
 while 1:
     _, frame = cap.read()				# depending upon what our while loop returns, we read the camera feed
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)     # we convert the capture's color array from standard BlueGreenRed to HueSaturationValue
-    low_red = np.array([65, 10, 10])
-    upper_red = np.array([95, 255, 255])
+    low_green = np.array([65, 10, 10])
+    upper_green = np.array([95, 255, 255])
 
-    mask = cv2.inRange(hsv, low_red, upper_red)                 # we create a bitmap featuring, separating each of the items into 
+    mask = cv2.inRange(hsv, low_green, upper_green)                 # we create a bitmap featuring, separating each of the items into 
 
     res = cv2.bitwise_and(frame, frame, mask = mask)            # we perform an and operation on each of the pixels, setting them high and low
 
