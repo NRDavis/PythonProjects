@@ -14,10 +14,10 @@ while 1:
     thresh3 = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
 
     #cv2.imshow("frame", frame)
-    #cv2.imshow("gray", gray) 
-    #cv2.imshow("thresh", thresh1)
-    #cv2.imshow("thresh2", thresh2)
-    cv2.imshow("thresh3", thresh3)
+    #cv2.imshow("gray", gray)                       # gray scale video feed 
+    #cv2.imshow("thresh", thresh1)                  # binary threshold - duotone video 
+    #cv2.imshow("thresh2", thresh2)             # adaptive gaussian threshold imposed 
+    cv2.imshow("thresh3", thresh3)              # presents animated style of video 
     
     if cv2.waitKey(5) & 0xFF == 27:
         break
