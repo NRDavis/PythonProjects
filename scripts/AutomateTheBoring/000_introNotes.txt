@@ -1,0 +1,9 @@
+
+
+#Automate the Boring Stuff
+
+
+# Viewing the Udemy online course and obtaining a refresher
+
+
+pythontutor.com/visualize.html
