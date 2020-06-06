@@ -9,7 +9,7 @@ from tkinter import *
 #from qrcode import *
 import qrcode
 #from fileFunctions import *
-from time import time
+from time import time, asctime
 #import time *
 
 
@@ -41,7 +41,7 @@ class Window(Frame):
     
     def genQR(self,firstName, lastName, ID):
         # we create a simple string using our studen'ts name, student ID, and the current time
-        t = str(time())
+        t = str(asctime())
     
         qr = qrcode.QRCode(
             version = 1,
