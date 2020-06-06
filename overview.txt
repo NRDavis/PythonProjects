@@ -2,3 +2,14 @@ In this repository, you'll find a number of individual projects made to prototyp
 
 Most of these applets have been implemented using a cross platform GUI library called kivy. They're implemented first in Python
 for its rate of development, then redesigned in another software format native to the intended user's device.
+
+
+
+
+
+
+When using pip or pip3, if find the following commands to be very useful:
+
+pip3 search <query>
+pip freeze
+help()   ...wait until it loads...  help> modules         (displays list of installed modules)
