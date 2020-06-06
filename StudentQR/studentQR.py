@@ -46,7 +46,7 @@ class Window(Frame):
         qr = qrcode.QRCode(
             version = 1,
             error_correction = qrcode.constants.ERROR_CORRECT_M,
-            box_size = 20,
+            box_size = 10,
             border = 4,
             )
         dataString = firstName +', '+lastName +' , ' +str(ID)+', '+t     # string concatenation of argument values 
