@@ -5,13 +5,9 @@ Intent:						Create a simple desktop based application for providing QR Code cre
 '''
 #import tkinter as tk    # provides gui functionality
 from tkinter import *
-#import qrcode           # used to generate QR Codes
-#from qrcode import *
 import qrcode
-#from fileFunctions import *
 from time import time, asctime
-#import time *
-
+from PIL import Image, ImageTk
 
 
 class Window(Frame):
@@ -41,8 +37,8 @@ class Window(Frame):
     
     def genQR(self,firstName, lastName, ID):
         # we create a simple string using our studen'ts name, student ID, and the current time
+        # In the following 12 lines, we create our qrcode as a png image 
         t = str(asctime())
-    
         qr = qrcode.QRCode(
             version = 1,
             error_correction = qrcode.constants.ERROR_CORRECT_M,
@@ -54,7 +50,13 @@ class Window(Frame):
         qr.make(fit=True)
         img = qr.make_image()
         img.save(firstName+lastName+"_qrcode.png") 
-    
+        
+        # we read our newly created image and display it on the Window
+        load = Image.open(firstName+lastName+'_qrcode.png')
+        render = ImageTk.PhotoImage(load)
+        image = Label(self, image = render)
+        image.image = render
+        image.place(x=0,y=0)
     
     def client_exit(self):
         exit()
