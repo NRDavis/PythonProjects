@@ -6,8 +6,13 @@ Intent:						Create a simple desktop based application for providing QR Code cre
 #import tkinter as tk    # provides gui functionality
 from tkinter import *
 #import qrcode           # used to generate QR Codes
-from qrcode import *
+#from qrcode import *
+import qrcode
 #from fileFunctions import *
+from time import time
+#import time *
+
+
 
 class Window(Frame):
     def __init__(self, master=None):
@@ -25,7 +30,7 @@ class Window(Frame):
         
         
         #file.add_command(label='Import Student CSV', command=self.readCSV)  # read information from a CSV list
-        #file.add_command(label='Generate QR Code', command=self.genQR)
+        file.add_command(label='Generate QR Code', command=self.genQR('Nathan', 'Davis', 662))
         file.add_command(label="Exit",command=self.client_exit)     # we add exit command to file tab
         menu.add_cascade(label='File',menu=file)                            # we add the file tab to the menu
 
@@ -34,7 +39,21 @@ class Window(Frame):
         #edit.add_command(label='Enter Student Information')
         menu.add_cascade(label='Edit',menu=edit)
     
+    def genQR(self,firstName, lastName, ID):
+        # we create a simple string using our studen'ts name, student ID, and the current time
+        t = str(time())
     
+        qr = qrcode.QRCode(
+            version = 1,
+            error_correction = qrcode.constants.ERROR_CORRECT_M,
+            box_size = 20,
+            border = 4,
+            )
+        dataString = firstName +', '+lastName +' , ' +str(ID)+', '+t     # string concatenation of argument values 
+        qr.add_data(dataString)
+        qr.make(fit=True)
+        img = qr.make_image()
+        img.save(firstName+lastName+"_qrcode.png") 
     
     
     def client_exit(self):
