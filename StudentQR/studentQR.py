@@ -23,9 +23,8 @@ class Window(Frame):
         self.master.config(menu=menu)
         
         file = Menu(menu)           # we create file tab
-        
-        
         #file.add_command(label='Import Student CSV', command=self.readCSV)  # read information from a CSV list
+        file.add_command(label='Import data')
         file.add_command(label='Generate QR Code', command=self.genQR('Nathan', 'Davis', 662))
         file.add_command(label="Exit",command=self.client_exit)     # we add exit command to file tab
         menu.add_cascade(label='File',menu=file)                            # we add the file tab to the menu
@@ -34,6 +33,18 @@ class Window(Frame):
         #edit.add_command(label='Generate QR', command=self.genQR)
         #edit.add_command(label='Enter Student Information')
         menu.add_cascade(label='Edit',menu=edit)
+    
+    
+        tools = Menu(menu)
+        tools.add_command(label='plugin')
+        menu.add_cascade(label='Tools', menu=tools)
+    
+        search = Menu(menu)
+        search.add_command(label='Search')
+        menu.add_cascade(label='Search Bar', menu=search)
+    
+    
+    
     
     def genQR(self,firstName, lastName, ID):
         # we create a simple string using our studen'ts name, student ID, and the current time
