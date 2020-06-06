@@ -1,6 +1,6 @@
 
 
-#Automate the Boring Stuff
+#Automate the Boring Stuff with Python
 
 
 # Viewing the Udemy online course and obtaining a refresher
