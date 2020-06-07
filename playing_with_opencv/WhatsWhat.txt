@@ -11,3 +11,4 @@ Here is a list of the python scripts inlcuded and their applications:
 				prompt.py 				Demos how OpenCV objects can be utilized within fairly standard code, especially when embedded in another application.
 				drawing.py				illustrates how we can use simple commands to alter the appearance of our image
 				maze.py					Used to practice drawing objects within a cv2 context
+				videoThresh.py				A small script reads a video feed and emphasizes the outline of text and outline features
