@@ -1,0 +1,71 @@
+
+        
+		#label = tk.Label(self, text = 'Home page', font = controller.title_font)
+		#label.pack(side='top',fill='x', pady='10')
+		
+        #label2 = tk.Label(self, text = "New app", font = controller.title_font)
+        #label2.pack(side='bottom',fill='x',pady='10')
+        
+        #file = Menu(menu)
+        
+		
+		
+		
+		
+		
+		#label.place(height=100,width=100)
+        
+        
+        
+        
+        
+        #image.grid(row=0,column=0)
+        #label = tk.Label(self, text='Home', font = controller.title_font).grid(row=0, column = 0)
+        #label2 = tk.Label(self, text='search\t').grid(row=1, column = 0)
+        #e1 = tk.Entry(self)
+        #e2 = tk.Entry(self)
+        #e1.place(x=90, y=90)
+        #e2.grid(row=2, column=1)
+        
+        #button1 = tk.Button(self, text = "Go to settings page", command=lambda:controller.show_frame("SettingsPage"))
+        #button1.pack()
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		#label = tk.Label(self, text = 'Home page', font = controller.title_font)
+        #label.pack(side='top',fill='x', pady='10')
+        
+        
+        
+        #img = ImageTk.PhotoImage(Image.open("images/Home.png"))
+        '''
+        load = Image.open("images/Home.png")
+        render = ImageTk.PhotoImage(load)
+        image = tk.Label(image = render)
+        image.image = render
+        image.place(x=0,y=0)
+        '''
+        
+		
+		
+		
+		
+		 #label.config(bg='skyblue')
+        #label.pack(pady=10,padx=10)
+        #label = tk.Label(self,text='Home', font = controller.title_font).pack(side='left',fill='both',padx=5, pady=5, expand=True)
+        #label.pack()
+        #label.place(relx = 0.05, rely = 0.05, x = 20, y = 40, relwidth = 0.1, relheight = 0.1)
+        #label.pack()
+		
